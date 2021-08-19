@@ -1,0 +1,23 @@
+-- Write this sentence backwards and uppercase
+-- My dog stopped loving me long ago...
+-- Solution:
+SELECT REVERSE(UPPER('My dog stopped loving me long ago...'));
+
+-- What will this command print out?
+SELECT 
+    REPLACE
+    (
+    CONCAT ('I', ' ', 'eat', ' ', 'pizza.'),
+    ' ',
+    '-'
+    );
+-- Solution: This commadn will print out a concatanation of 'I eat pizza.' However, due to the REPLACE string command, each of the ' ' characters will be "replaced" with a '-' character.
+-- The final result will be: 'I-like-pizza.'
+
+-- Use REPLACE to change all spaces in the books table to '->'. Alias the title table to read 'title'
+-- Solution:
+USE book_shop; -- Selects our DB for use.
+USE books; -- Se;ects our table for use.
+SELECT REPLACE(title, ' ', '->') AS title FROM books;
+
+-- Print the first name of authors
