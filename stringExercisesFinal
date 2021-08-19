@@ -1,4 +1,4 @@
--- These commands should be utilized with the book shop database and the books table inside it.
+-- Problems are to be used with the book DB and table.
 
 -- Write this sentence backwards and uppercase
 -- My dog stopped loving me long ago...
@@ -44,3 +44,4 @@ SELECT CONCAT(SUBSTRING(title, 1, 10), '...') AS 'short title',
        CONCAT(author_lname, ', ', author_fname) AS 'author',
        CONCAT(stock_quantity, ' in stock') AS 'quantity' 
 FROM books;
+       
