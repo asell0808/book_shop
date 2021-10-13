@@ -1,3 +1,5 @@
+-- book shop database
+-- corresponding table for books in the database
 CREATE DATABASE book_shop;
 
 CREATE TABLE books
